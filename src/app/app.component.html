@@ -15,3 +15,10 @@
     Submit link
   </button>
 </form>
+
+<div class="ui grid posts">
+  <app-article
+    *ngFor="let article of articles"
+    [article]="article">
+  </app-article>
+</div>
